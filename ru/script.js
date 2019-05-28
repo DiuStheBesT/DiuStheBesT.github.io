@@ -1,5 +1,9 @@
 (function() {
 
+  var currentYear =  new Date();
+  var currentYear = currentYear.getFullYear();
+  document.getElementById("current-year").innerHTML = currentYear.toString();
+
   $(".sw-1").YouTubePopUp();
 
   var swiper = new Swiper('.swiper-container', {
