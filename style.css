@@ -469,8 +469,12 @@ input{
     padding: 55px 40px;
   }
   .sw-1{
-    height: 101%;
-    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .sw-1 img{
+    height: 600px;
+    margin: 0 auto;
   }
 
 
