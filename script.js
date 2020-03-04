@@ -12,7 +12,7 @@
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
     slidesPerView: 1,
-    initialSlide: 2,
+//     initialSlide: 2,
     paginationClickable: true
     // loop: true
   });
