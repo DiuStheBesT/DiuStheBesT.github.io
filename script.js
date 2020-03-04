@@ -11,10 +11,10 @@
     pagination: '.swiper-pagination',
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-    slidesPerView: 1,
-//     initialSlide: 2,
+    slidesPerView: auto,
+    initialSlide: 0,
     paginationClickable: true
-    // loop: true
+    loop: true
   });
 
   // menu scroll
