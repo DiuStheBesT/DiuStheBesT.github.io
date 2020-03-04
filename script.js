@@ -11,6 +11,7 @@
 //     pagination: '.swiper-pagination',
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
+    hideOnClick: 'false',
 //     slidesPerView: auto,
 //     initialSlide: 0,
 //     paginationClickable: true
