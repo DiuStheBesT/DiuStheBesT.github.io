@@ -8,13 +8,13 @@
   $(".sw-1").YouTubePopUp();
 
   var swiper = new Swiper('.swiper-container', {
-    pagination: '.swiper-pagination',
+//     pagination: '.swiper-pagination',
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-    slidesPerView: auto,
-    initialSlide: 0,
-    paginationClickable: true
-    loop: true
+//     slidesPerView: auto,
+//     initialSlide: 0,
+//     paginationClickable: true
+//     loop: true
   });
 
   // menu scroll
