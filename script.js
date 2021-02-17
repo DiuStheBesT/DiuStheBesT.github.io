@@ -5,27 +5,18 @@
   var currentYear = currentYear.getFullYear();
   document.getElementById("current-year").innerHTML = currentYear.toString();
 
-//   $(".sw-1").YouTubePopUp();
-  $(".sw-1").videoPopup({
 
-    // autoplay on open
-    autoplay: false,
-
-    // shows video controls
-    showControls: true,
-
-    // colors of controls
-    controlsColor: null,
-
-    // infinite loop
-    loopVideo: false,
-
-    // shows video information
-    showVideoInformations: true,
-
-    // width
-    width: null
-
+  $(".link-one").videoPopup({
+    autoplay: 1,
+    controlsColor: 'white',
+    showVideoInformations: 0,
+    width: 1000,
+  });
+  $(".link-two").videoPopup({
+    autoplay: 1,
+    controlsColor: 'white',
+    showVideoInformations: 0,
+    // width: 1000,
   });
 
   var swiper = new Swiper('.swiper-container', {
@@ -33,10 +24,6 @@
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
     hideOnClick: 'false',
-//     slidesPerView: auto,
-//     initialSlide: 0,
-//     paginationClickable: true
-//     loop: true
   });
 
   // menu scroll
