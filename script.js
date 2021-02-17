@@ -6,6 +6,27 @@
   document.getElementById("current-year").innerHTML = currentYear.toString();
 
   $(".sw-1").YouTubePopUp();
+  $(".sw-1").videoPopup({
+
+    // autoplay on open
+    autoplay: false,
+
+    // shows video controls
+    showControls: true,
+
+    // colors of controls
+    controlsColor: null,
+
+    // infinite loop
+    loopVideo: false,
+
+    // shows video information
+    showVideoInformations: true,
+
+    // width
+    width: null
+
+  });
 
   var swiper = new Swiper('.swiper-container', {
 //     pagination: '.swiper-pagination',
