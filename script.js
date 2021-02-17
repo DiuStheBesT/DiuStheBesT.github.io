@@ -5,7 +5,7 @@
   var currentYear = currentYear.getFullYear();
   document.getElementById("current-year").innerHTML = currentYear.toString();
 
-  $(".sw-1").YouTubePopUp();
+//   $(".sw-1").YouTubePopUp();
   $(".sw-1").videoPopup({
 
     // autoplay on open
