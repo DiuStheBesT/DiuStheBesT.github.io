@@ -6,7 +6,7 @@
     <title>Kirill Papilio | Art Director & VFX Supervisor</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
     
     <style>
         body {
@@ -23,17 +23,19 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 800px; /* Трохи ширше, щоб titles вміщалися в рядок */
             padding: 40px 20px;
         }
 
         h1 {
             font-family: 'Montserrat', sans-serif;
-            font-weight: 800;
-            /* Зменшив розмір, щоб не виходив за межі нижнього рядка */
-            font-size: clamp(1.8rem, 6vw, 2.4rem); 
-            letter-spacing: 0.05em;
-            margin-bottom: 0.3rem;
+            font-weight: 800; /* Extra Bold, як у 1-му варіанті */
+            /* Збільшив розмір, щоб вирівняти по ширині з Titles. */
+            font-size: clamp(2.3rem, 9.5vw, 3.2rem); 
+            /* Збільшив трекінг, щоб заповнити ширину без занадто великих літер */
+            letter-spacing: 0.1em;
+            /* Повернув великий інтервал */
+            margin-bottom: 1.5rem;
             text-transform: uppercase;
             color: #1a1a1a;
             display: inline-block;
@@ -41,25 +43,27 @@
 
         .titles {
             font-weight: 400;
-            font-size: 1.1rem;
+            font-size: 1.3rem; /* Трохи більший розмір, як у 1-му варіанті */
             color: #343434;
-            margin-bottom: 0.8rem;
-            letter-spacing: 0.01em;
+            /* Повернув великий інтервал */
+            margin-bottom: 2.5rem;
+            letter-spacing: 0.02em;
         }
 
         .industries {
             font-weight: 300;
-            font-size: 0.8rem;
+            font-size: 0.9rem; /* Трохи більший розмір */
             letter-spacing: 0.12em;
             text-transform: uppercase;
-            color: #999; /* Твій блідо-сірий */
-            margin-bottom: 3rem;
+            color: #999;
+            /* Повернув великий інтервал */
+            margin-bottom: 4rem;
         }
 
         .links {
             display: flex;
             flex-direction: column;
-            gap: 12px; /* Однаковий інтервал між усіма посиланнями */
+            gap: 12px;
             align-items: center;
         }
 
@@ -67,7 +71,7 @@
             color: #620902;
             text-decoration: none;
             font-weight: 400;
-            font-size: 0.95rem; /* Всі посилання одного розміру */
+            font-size: 0.95rem;
             border-bottom: 1px solid transparent;
             transition: all 0.3s ease;
         }
@@ -78,9 +82,9 @@
         }
 
         .location {
-            margin-top: 4rem;
-            font-size: 0.8rem;
-            color: #999; /* Блідо-сірий для Києва */
+            margin-top: 4.5rem;
+            font-size: 0.85rem;
+            color: #999;
             font-weight: 400;
             letter-spacing: 0.08em;
             text-transform: uppercase;
