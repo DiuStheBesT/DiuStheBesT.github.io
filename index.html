@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kirill Papilio | Art Director & VFX Supervisor</title>
+    <title>Kirill Papilio | Art Director</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Montserrat:wght@800&display=swap" rel="stylesheet">
     
     <style>
+        :root {
+            --bg-color: #e5f2fb;
+            --text-main: #1a1a1a;
+            --text-secondary: #343434;
+            --text-muted: #999999;
+            --accent: #620902;
+        }
+
         body {
             margin: 0;
             padding: 0;
@@ -16,77 +24,77 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: #e5f2fb;
-            font-family: 'Inter', sans-serif;
-            color: #343434;
+            background-color: var(--bg-color);
+            font-family: 'Inter', -apple-system, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            color: var(--text-main);
             text-align: center;
         }
 
         .container {
-            max-width: 800px; /* Трохи ширше, щоб titles вміщалися в рядок */
-            padding: 40px 20px;
+            width: 100%;
+            max-width: 900px;
+            padding: 60px 24px;
         }
 
+        /* ГАЙД: H1 має бути значно більшим за Body (Scale 2.5x - 3x) */
         h1 {
             font-family: 'Montserrat', sans-serif;
-            font-weight: 800; /* Extra Bold, як у 1-му варіанті */
-            /* Збільшив розмір, щоб вирівняти по ширині з Titles. */
-            font-size: clamp(2.3rem, 9.5vw, 3.2rem); 
-            /* Збільшив трекінг, щоб заповнити ширину без занадто великих літер */
-            letter-spacing: 0.1em;
-            /* Повернув великий інтервал */
-            margin-bottom: 1.5rem;
+            font-weight: 800;
+            font-size: clamp(2.5rem, 10vw, 4rem); 
+            letter-spacing: -0.02em; /* Зменшив трекінг для кращої читаємості великого шрифту */
+            line-height: 1.1;
+            margin: 0 0 16px 0; /* 16px - стандартний відступ */
             text-transform: uppercase;
-            color: #1a1a1a;
-            display: inline-block;
         }
 
+        /* ГАЙД: Subtitle (Medium size, Regular weight) */
         .titles {
             font-weight: 400;
-            font-size: 1.3rem; /* Трохи більший розмір, як у 1-му варіанті */
-            color: #343434;
-            /* Повернув великий інтервал */
-            margin-bottom: 2.5rem;
-            letter-spacing: 0.02em;
+            font-size: clamp(1rem, 4vw, 1.25rem);
+            color: var(--text-secondary);
+            margin-bottom: 8px; /* Ближче до заголовка, бо вони — одна група */
+            letter-spacing: 0.01em;
         }
 
+        /* ГАЙД: Overline/Caption (Small, Uppercase, Wide spacing) */
         .industries {
             font-weight: 300;
-            font-size: 0.9rem; /* Трохи більший розмір */
-            letter-spacing: 0.12em;
+            font-size: 0.8rem;
+            letter-spacing: 0.15em;
             text-transform: uppercase;
-            color: #999;
-            /* Повернув великий інтервал */
-            margin-bottom: 4rem;
+            color: var(--text-muted);
+            margin-bottom: 64px; /* Великий відступ перед наступною секцією (Links) */
         }
 
         .links {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 16px;
             align-items: center;
         }
 
         a {
-            color: #620902;
+            color: var(--accent);
             text-decoration: none;
             font-weight: 400;
-            font-size: 0.95rem;
+            font-size: 1rem;
+            padding: 4px 0;
             border-bottom: 1px solid transparent;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease-in-out;
         }
 
         a:hover {
-            color: #1a1a1a;
-            border-bottom: 1px solid #620902;
+            color: var(--text-main);
+            border-bottom: 1px solid var(--accent);
         }
 
         .location {
-            margin-top: 4.5rem;
-            font-size: 0.85rem;
-            color: #999;
+            margin-top: 80px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
             font-weight: 400;
-            letter-spacing: 0.08em;
+            letter-spacing: 0.1em;
             text-transform: uppercase;
         }
     </style>
