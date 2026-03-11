@@ -1,97 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirill Papilio | Art Director & VFX Supervisor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #e5f2fb; /* Твій колір фону */
+            font-family: 'Inter', sans-serif;
+            color: #343434; /* Твій колір основного тексту */
+            text-align: center;
+        }
 
-<title>Kirill Papilio</title>
+        .container {
+            max-width: 700px;
+            padding: 40px 20px;
+        }
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800; /* Extra Bold */
+            font-size: clamp(2rem, 8vw, 3.5rem); /* Адаптивний розмір */
+            letter-spacing: 0.05em; /* Трекінг 50 (у CSS це 0.05em) */
+            margin-bottom: 0.2rem;
+            text-transform: uppercase;
+            color: #1a1a1a;
+        }
 
-<style>
+        .titles {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            font-size: 1.1rem;
+            color: #343434;
+            margin-bottom: 3.5rem;
+            letter-spacing: 0.02em;
+        }
 
-body{
-margin:0;
-background:#ffffff;
-color:#111;
-font-family:Inter, sans-serif;
-display:flex;
-align-items:center;
-justify-content:center;
-height:100vh;
-}
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            align-items: center;
+        }
 
-.container{
-max-width:600px;
-padding:40px;
-}
+        a {
+            color: #620902; /* Твій акцентний колір (бордовий) */
+            text-decoration: none;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
 
-h1{
-font-weight:600;
-font-size:42px;
-margin-bottom:10px;
-}
+        a:hover {
+            color: #1a1a1a;
+            border-bottom: 1px solid #620902;
+        }
 
-.role{
-font-size:18px;
-line-height:1.6;
-color:#444;
-margin-bottom:30px;
-}
+        /* Стиль для основної пошти, щоб виділити її як головну дію */
+        .email-link {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
 
-.meta{
-font-size:15px;
-color:#666;
-margin-bottom:40px;
-}
-
-.links a{
-display:block;
-margin-bottom:10px;
-text-decoration:none;
-color:#000;
-font-weight:500;
-}
-
-.links a:hover{
-opacity:0.6;
-}
-
-.footer{
-margin-top:40px;
-font-size:14px;
-color:#888;
-}
-
-</style>
+        .location {
+            margin-top: 4rem;
+            font-size: 0.85rem;
+            color: #616161;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+    </style>
 </head>
-
 <body>
+    <div class="container">
+        <h1>Kirill Papilio</h1>
+        <div class="titles">Art Director | Cinematic Director | VFX Supervisor</div>
+        
+        <div class="links">
+            <a href="mailto:kirillpapilio@gmail.com" class="email-link">kirillpapilio@gmail.com</a>
+            <a href="https://www.artstation.com/kirillpapilio" target="_blank">ArtStation Portfolio</a>
+            <a href="https://www.linkedin.com/in/kirillpapilio/" target="_blank">LinkedIn Profile</a>
+        </div>
 
-<div class="container">
-
-<h1>Kirill Papilio</h1>
-
-<div class="role">
-Art Director · Cinematic Director · VFX Supervisor<br>
-Film · Games · Immersive Media
-</div>
-
-<div class="meta">
-Kyiv, Ukraine
-</div>
-
-<div class="links">
-<a href="https://www.artstation.com/kirillpapilio" target="_blank">ArtStation</a>
-<a href="mailto:kirillpapilio@gmail.com">kirillpapilio@gmail.com</a>
-</div>
-
-<div class="footer">
-Portfolio update in progress.
-</div>
-
-</div>
-
+        <div class="location">Kyiv, Ukraine</div>
+    </div>
 </body>
 </html>
